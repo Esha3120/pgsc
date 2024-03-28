@@ -7,58 +7,36 @@
     <title>Patidar Gin Science College | Home</title>
 
 <?php
+include "conn.php";
 require_once "./includes/header.php";
 ?>
   <!-- Start Slider -->
   <section id="mu-slider">
+                      <?php
+                      $q="SELECT * FROM `slider_mst` WHERE sd_status = 1";
+                      $res=mysqli_query($con,$q);
+                      $i=1;
+                      while ($row=mysqli_fetch_assoc($res)){
+                        ?>
     <!-- Start single slider item -->
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="admin_pgsc/images/slider/<?php echo $row['sd_img']?>" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
-        <h4>Welcome To Varsity</h4>
-        <span></span>
+        <h2>Welcome To Patidar Gin Science College</h2>
+        <!-- <span></span>
         <h2>We Will Help You To Learn</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-        <a href="#" class="mu-read-more-btn">Read More</a>
+        <p> debitis corporis temporibus recusandae accusamus.</p>
+        <a href="#" class="mu-read-more-btn">Read More</a> -->
       </div>
     </div>
     <!-- Start single slider item -->
-    <!-- Start single slider item -->
-    <div class="mu-slider-single">
-      <div class="mu-slider-img">
-        <figure>
-          <img src="assets/img/slider/2.jpg" alt="img">
-        </figure>
-      </div>
-      <div class="mu-slider-content">
-        <h4>Premiumu Quality Free Template</h4>
-        <span></span>
-        <h2>Best Education Template Ever</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-        <a href="#" class="mu-read-more-btn">Read More</a>
-      </div>
-    </div>
-    <!-- Start single slider item -->
-    <!-- Start single slider item -->
-    <div class="mu-slider-single">
-      <div class="mu-slider-img">
-        <figure>
-          <img src="assets/img/slider/3.jpg" alt="img">
-        </figure>
-      </div>
-      <div class="mu-slider-content">
-        <h4>Exclusivly For Education</h4>
-        <span></span>
-        <h2>Education For Everyone</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-        <a href="#" class="mu-read-more-btn">Read More</a>
-      </div>
-    </div>
-    <!-- Start single slider item -->    
+    <?php
+                      }
+                      ?>
   </section>
   <!-- End Slider -->
   <!-- Start service  -->
