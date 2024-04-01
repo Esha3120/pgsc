@@ -1,44 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Patidar Gin Science College | Home</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patidar Gin Science College | Home</title>
-
-  <?php
-  include "conn.php";
-  require_once "./includes/header.php";
-  ?>
+<?php
+include "conn.php";
+require_once "./includes/header.php";
+?>
   <!-- Start Slider -->
   <section id="mu-slider">
-    <?php
-    $q = "SELECT * FROM `slider_mst` WHERE sd_status = 1";
-    $res = mysqli_query($con, $q);
-    $i = 1;
-    while ($row = mysqli_fetch_assoc($res)) {
-    ?>
-      <!-- Start single slider item -->
-      <div class="mu-slider-single">
-        <div class="mu-slider-img">
-          <figure>
-            <img src="admin_pgsc/images/slider/<?php echo $row['sd_img'] ?>" alt="img">
-          </figure>
-        </div>
-        <div class="mu-slider-content">
-          <!-- <h4></h4>
-        <span></span> -->
-          <h3>Welcome To Patidar Gin Science College</h3>
-          <!-- <p> debitis corporis temporibus recusandae accusamus.</p>
-        <a href="#" class="mu-read-more-btn">Read More</a> -->
-        </div>
+                      <?php
+                      $q="SELECT * FROM `slider_mst` WHERE sd_status = 1";
+                      $res=mysqli_query($con,$q);
+                      $i=1;
+                      while ($row=mysqli_fetch_assoc($res)){
+                        ?>
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="admin_pgsc/images/slider/<?php echo $row['sd_img']?>" alt="img">
+        </figure>
       </div>
-      <!-- Start single slider item -->
+      <div class="mu-slider-content">
+        <h2>Welcome To Patidar Gin Science College</h2>
+        <!-- <span></span>
+        <h2>We Will Help You To Learn</h2>
+        <p> debitis corporis temporibus recusandae accusamus.</p>
+        <a href="#" class="mu-read-more-btn">Read More</a> -->
+      </div>
+    </div>
+    <!-- Start single slider item -->
     <?php
-    }
-    ?>
+                      }
+                      ?>
   </section>
   <!-- End Slider -->
   <!-- Start service  -->
@@ -80,22 +78,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="mu-about-us-area">
+          <div class="mu-about-us-area">           
             <div class="row">
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-left">
                   <!-- Start Title -->
                   <div class="mu-title">
-                    <h2></h2>
+                    <h2>About Us</h2>              
                   </div>
-                  <?php
-                  $q = "select * from content_mst where co_type='about'";
-                  $res = mysqli_query($con, $q);
-                  $row = mysqli_fetch_assoc($res);
-                  echo $row['co_content']
-                  ?>
                   <!-- End Title -->
-                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur fuga eveniet soluta aspernatur rem, nam voluptatibus voluptate voluptates sapiente, inventore. Voluptatem, maiores esse molestiae.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum pariatur fuga eveniet soluta aspernatur rem, nam voluptatibus voluptate voluptates sapiente, inventore. Voluptatem, maiores esse molestiae.</p>
                   <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     <li>Saepe a minima quod iste libero rerum dicta!</li>
@@ -104,26 +96,25 @@
                     <li>Repellat assumenda adipisci pariatur ipsam eos similique, explicabo.</li>
                   </ul>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quaerat harum facilis excepturi et? Mollitia!</p>
-                </div> -->
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="mu-about-us-right">
-                    <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
-                      <img src="assets/img/gallery/big/15.jpeg" alt="img"> 
-                    </a>
-                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="mu-about-us-right">                            
+                <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
+                  <img src="assets/img/about-us.jpg" alt="img">
+                </a>                
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- End about us -->
 
   <!-- Start about us counter -->
   <section id="mu-abtus-counter">
-
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -155,9 +146,6 @@
                   <p>Modern Lab</p>
                 </div>
               </div>
-
-
-
               <!-- End counter item -->
               <!-- Start counter item -->
               <div class="col-lg-3 col-md-3 col-sm-3">
@@ -173,7 +161,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <!-- End about us counter -->
 
@@ -412,7 +399,7 @@
                         <a href="#"><span class="fa fa-linkedin"></span></a>
                         <a href="#"><span class="fa fa-google-plus"></span></a>
                       </div>
-                    </figure>
+                    </figure>                    
                     <div class="mu-ourteacher-single-content">
                       <h4>Brian Dean</h4>
                       <span>Math Teacher</span>
@@ -430,7 +417,7 @@
                         <a href="#"><span class="fa fa-linkedin"></span></a>
                         <a href="#"><span class="fa fa-google-plus"></span></a>
                       </div>
-                    </figure>
+                    </figure>                    
                     <div class="mu-ourteacher-single-content">
                       <h4>James Hein</h4>
                       <span>Physics Teacher</span>
@@ -448,7 +435,7 @@
                         <a href="#"><span class="fa fa-linkedin"></span></a>
                         <a href="#"><span class="fa fa-google-plus"></span></a>
                       </div>
-                    </figure>
+                    </figure>                    
                     <div class="mu-ourteacher-single-content">
                       <h4>Rebeca Michel</h4>
                       <span>English Teacher</span>
@@ -466,7 +453,7 @@
                         <a href="#"><span class="fa fa-linkedin"></span></a>
                         <a href="#"><span class="fa fa-google-plus"></span></a>
                       </div>
-                    </figure>
+                    </figure>                    
                     <div class="mu-ourteacher-single-content">
                       <h4>John Doe</h4>
                       <span>Biology Teacher</span>
@@ -475,8 +462,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- End our teacher content -->
+            </div> 
+            <!-- End our teacher content -->           
           </div>
         </div>
       </div>
@@ -558,7 +545,7 @@
               <h2>From Blog</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vitae quae vero ut natus. Dolore!</p>
             </div>
-            <!-- end title -->
+            <!-- end title -->  
             <!-- start from blog content   -->
             <div class="mu-from-blog-content">
               <div class="row">
@@ -568,7 +555,7 @@
                       <a href="#"><img src="assets/img/blog/blog-1.jpg" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>
+                      </figcaption>                      
                     </figure>
                     <div class="mu-blog-meta">
                       <a href="#">By Admin</a>
@@ -587,7 +574,7 @@
                       <a href="#"><img src="assets/img/blog/blog-2.jpg" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>
+                      </figcaption>                      
                     </figure>
                     <div class="mu-blog-meta">
                       <a href="#">By Admin</a>
@@ -606,7 +593,7 @@
                       <a href="#"><img src="assets/img/blog/blog-3.jpg" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3><a href="#">Lorem ipsum dolor sit amet.</a></h3>
-                      </figcaption>
+                      </figcaption>                      
                     </figure>
                     <div class="mu-blog-meta">
                       <a href="#">By Admin</a>
@@ -620,14 +607,14 @@
                   </article>
                 </div>
               </div>
-            </div>
-            <!-- end from blog content   -->
+            </div>     
+            <!-- end from blog content   -->   
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End from blog -->
-  <?php
-  require_once "./includes/footer.php";
-  ?>
+<?php
+require_once "./includes/footer.php";
+?>
