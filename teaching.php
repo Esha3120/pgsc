@@ -11,17 +11,45 @@
   include "conn.php";
   require_once "./includes/header.php";
   ?>
-  <!-- Start Slider -->
-  <section id="mu-slider">
-    <?php
-    $q = "SELECT * FROM `slider_mst` WHERE sd_status = 1";
-    $res = mysqli_query($con, $q);
-    $i = 1;
-    while ($row = mysqli_fetch_assoc($res)) {
-    ?>
-    <?php
-    }
-    ?>
+
+  <section id="mu-course-content">
+    <div class="container">
+      <div class="table-responsive">
+        <table border="3" class="table">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Designation</th>
+              <th>Email</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            $q = "SELECT * FROM staff WHERE s_type='teaching'";
+            $res = mysqli_query($con, $q);
+            $i = 1;
+            while ($row = mysqli_fetch_assoc($res)) {
+            ?>
+              <tr>
+                <td><?php echo $i++ ?></td>
+                <td><?php echo $row['name'] ?></td>
+                <td><?php echo $row['subject'] ?></td>
+                <td><?php echo $row['designation'] ?></td>
+                <td><?php echo $row['email'] ?></td>
+                <td><img src="admin_pgsc/img/<?php echo $row['img'] ?>" height="50px" width="50px"></td>
+              </tr>
+            <?php
+            }
+            ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <?php
   require_once "./includes/footer.php";
   ?>
