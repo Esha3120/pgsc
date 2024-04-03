@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Patidar Gin Science College | Home</title>
-
   <?php
   include "conn.php";
   require_once "./includes/header.php";
@@ -15,7 +14,7 @@
   <section id="mu-course-content">
     <div class="container">
       <div class="table-responsive">
-        <table border="3" class="table">
+        <table  class="table table-striped">
           <thead>
             <tr>
               <th>Sr.No</th>
@@ -46,10 +45,10 @@
             ?>
           </tbody>
         </table>
+      
       </div>
     </div>
   </section>
-
   <?php
   require_once "./includes/footer.php";
   ?>

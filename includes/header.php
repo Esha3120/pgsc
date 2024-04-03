@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Varsity | Home</title>
+  <title>Patidar Gin Science College | Home</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -154,11 +154,11 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">IQAC<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
 
-              <li><a href="#">AQAR</a></li>
+              <li><a href="AQAR.php">AQAR</a></li>
                 <li><a href="#">The Performance of the Institute</a></li>
                 <li><a href="#">Student Performance and Learning Outcomes</a></li>
                 <li><a href="#">Procedures and Policies</a></li>
-                <li><a href="#">Best Practicies</a></li>
+                <li><a href="best_practices.php">Best Practicies</a></li>
                 <li><a href="#">NAAC</a></li>
                 <li><a href="#">IQAC Committee</a></li>
               </ul>

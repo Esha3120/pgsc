@@ -1,5 +1,6 @@
 <?php 
   include"scheck.php";
+  
   if(isset($_REQUEST['btndelete']))
   {
       $id=$_REQUEST['did'];
@@ -19,14 +20,17 @@
         $email=$_REQUEST['txt_email'];
         $s_type=$_REQUEST['txt_stype'];
         $img=$_FILES['txt_img']['name'];
+        $active=$_REQUEST['txt_active'];
+        $uid=$_REQUEST['eid'];
       $q="update  staff set
       name='$name',
       designation='$designation',
       subject='$subject',
       email='$email',
       s_type='$s_type',
-      img='$img'
-        where id='$id'
+      img='$img',
+      s_active='$active'
+        where id='$uid'
         ";
       }
       else
@@ -37,14 +41,17 @@
         $email=$_REQUEST['txt_email'];
         $s_type=$_REQUEST['txt_stype'];
         $img=$_FILES['txt_img']['name'];
+        $active=$_REQUEST['txt_active'];
+        $uid=$_REQUEST['eid'];
       $q="update  staff set
       name='$name',
       designation='$designation',
       subject='$subject',
       email='$email',
       s_type='$s_type',
-      img='$img'
-        where id='$id'
+      img='$img',
+      s_active='$active',
+        where id='$uid'
         ";
          move_uploaded_file($_FILES['txt_img']['tmp_name'],
             "images/".$_FILES['txt_img']['name']);
@@ -204,6 +211,23 @@
                                                         <label for="inputDescription">Image</label>
                                                         <input type="file" name="txt_img" class="form-control">
                                                       </div>
+                                                      <?php
+                                                          if($row['s_active']==1)
+                                                          {
+                                                            ?>
+                                                            <input type="radio" name="txt_active" checked="" required="" value="1">Active
+                                                            <input type="radio" name="txt_active" value="0">Deactive
+                                                            <?php
+                                                          }
+                                                          else
+                                                          {
+                                                            ?>
+                                                            <input type="radio" name="txt_active" required="" value="1">Active
+                                                            <input type="radio" name="txt_active" checked="" value="0">Deactive
+
+                                                            <?php
+                                                          }
+                                                        ?>
                                                 </div>
                                                 <div class="modal-footer justify-content-between">
                                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
