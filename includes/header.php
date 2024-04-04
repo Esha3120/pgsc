@@ -155,9 +155,9 @@
               <ul class="dropdown-menu" role="menu">
 
               <li><a href="AQAR.php">AQAR</a></li>
-                <li><a href="#">The Performance of the Institute</a></li>
-                <li><a href="#">Student Performance and Learning Outcomes</a></li>
-                <li><a href="#">Procedures and Policies</a></li>
+                <li><a href="performance_of_institute.php">The Performance of the Institute</a></li>
+                <li><a href="Student_Performance_and_Learning.php">Student Performance and Learning Outcomes</a></li>
+                <li><a href="procedures_and_policies.php">Procedures and Policies</a></li>
                 <li><a href="best_practices.php">Best Practicies</a></li>
                 <li><a href="#">NAAC</a></li>
                 <li><a href="#">IQAC Committee</a></li>
@@ -167,11 +167,11 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities<span class="fa fa-angle-down"></span></a>
               
             <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Infrastructure</a></li>
-              <li><a href="#">Laboratories</a></li>
-              <li><a href="#">Library</a></li>
-              <li><a href="#">Sports Facility</a></li>
-              <li><a href="#">ICT Facility</a></li>
+            <li><a href="infrastructure.php">Infrastructure</a></li>
+              <li><a href="laboratories.php">Laboratories</a></li>
+              <li><a href="library.php">Library</a></li>
+              <li><a href="sports_facility.php">Sports Facility</a></li>
+              <li><a href="ict_facility.php">ICT Facility</a></li>
             </ul>
             </li>
             <li><a href="contact.php">Contact</a></li>

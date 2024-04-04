@@ -31,8 +31,137 @@
   <!-- End breadcrumb -->
   <section id="mu-course-content">
   <div class="container">
+  <div class="row">
+                <div class="col-sm-3 p-5 inner-section">
+                    <h2 class="text-center">IQAC</h2>
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action list-group-item-light "
+                            href="AQAR.php">AQAR</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light active"
+                            href="performance_of_institute.php">The Performance of the
+                            Institute</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light "
+                            href="Student_Performance_and_Learning.php">Student Performance and Learning
+                            Outcomes</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light "
+                            href="procedures_and_policies.php">Procedures and
+                            Policies</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light"
+                            href="best_practices.php">Best Practices</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light"
+                            href="NAAC.html ">NAAC</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light"
+                            href="IQAC Committee.html">IQAC Committee</a>
 
-  <h2>AQAR Reports</h2><br></br>
+                    </div>
+                </div>
+                <div class="col-sm-9 p-5 sep-navtab">
+                    <h2 class="text-center">AQAR</h2>
+                    <table class="table table-striped table-hover table-bordered text-center">
+                        <tbody>
+                            <tr style="width:10%; background-color: #02ACEE;">
+                                <td><span style="color: #ffffff;"><strong>Sr. No.</strong></span></td>
+                                <td><span style="color: #ffffff;"><strong>Description</strong></span></td>
+                                <td><span style="color: #ffffff;"><strong>View</strong></span></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2012-13</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>1</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli, Gujarat.doc-12-13 (1).pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+                            </tr>
+                          
+                            <tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2013-14</strong></span></td>
+                            </tr>
+                          
+                            <tr>
+                                <td>2</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-13-14.pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+                            </tr>
+
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2014-15</strong></span></td>
+                            </tr>
+                          
+                            <tr>
+                                <td>3</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-14-15.pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2015-16</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>4</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-15-16.pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2016-17</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>5</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-16-17.pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2017-18</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>6</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat17=18.doc" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2018-19</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>7</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat18-19.doc" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2019-20</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>8</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat19-20.doc" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2020-21</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>9</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/AQAR-2020-21.pdf" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+<tr>
+                                <td colspan="3"><span style="color: #a8374b;"><strong>A. Y. 2021-22</strong></span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td>10</td>
+                                <td>AQAR</td>
+                                <td><strong><a style="color: #3366ff;" href="files/AQAR-2021-22.pdf" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+</tr>
+                          
+                        </tbody>
+                    </table>
+
+                    <h2>AQAR Reports</h2><br></br>
 
 ➪  <a href="AQAR(2012-13).php">AQAR:2012-13</a><br><br>
 
@@ -159,6 +288,14 @@
 
   </div>
 
+</div>
+  
+                </div>
+                
+                
+            </div>
+
+  </div>
 </div>
   </section>
   <?php

@@ -293,6 +293,12 @@
                   <p>About Trust</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="academic.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> Academic</p>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
