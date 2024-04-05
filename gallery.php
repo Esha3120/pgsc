@@ -46,7 +46,6 @@
                   <li class="filter" data-filter=".2022">2022</li>
                   <li class="filter" data-filter=".2023">2023</li>
                   <li class="filter" data-filter=".2024">2024</li>
-                  <li class="filter" data-filter=".others">Others</li>
                 </ul>
               </div>
 

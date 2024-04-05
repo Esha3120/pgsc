@@ -44,7 +44,7 @@
                     <div class="col-md-6 col-sm-6">
                     <div class="mu-latest-course-single">
                       <figure class="mu-latest-course-img">
-                        <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
+                        <a href="#"><img src="assets/img/academic/chem.jpeg" alt="img"></a>
                         <figcaption class="mu-latest-course-imgcaption">
                           <a href="#">Chemistry</a>
                           <span><i class="fa fa-clock-o"></i>90Days</span>
@@ -63,7 +63,7 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="mu-latest-course-single">
                       <figure class="mu-latest-course-img">
-                        <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
+                        <a href="#"><img src="assets/img/academic/maths.jpeg" alt="img"></a>
                         <figcaption class="mu-latest-course-imgcaption">
                           <a href="#">Mathematics </a>
                           <span><i class="fa fa-clock-o"></i>75Days</span>
@@ -82,7 +82,7 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="mu-latest-course-single">
                       <figure class="mu-latest-course-img">
-                        <a href="#"><img src="assets/img/courses/1.jpg" alt="img"></a>
+                        <a href="#"><img src="assets/img/academic/bio.jpeg" alt="img"></a>
                         <figcaption class="mu-latest-course-imgcaption">
                           <a href="#">Bio-Science</a>
                           <span><i class="fa fa-clock-o"></i>90Days</span>
@@ -102,7 +102,7 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="mu-latest-course-single">
                       <figure class="mu-latest-course-img">
-                        <a href="#"><img src="assets/img/courses/2.jpg" alt="img"></a>
+                        <a href="#"><img src="assets/img/academic/sports.jpeg" alt="img"></a>
                         <figcaption class="mu-latest-course-imgcaption">
                           <a href="#">Sports</a>
                           <span><i class="fa fa-clock-o"></i>75Days</span>
@@ -129,16 +129,17 @@
                 <aside class="mu-sidebar">
                   <!-- start single sidebar -->
                   <div class="mu-single-sidebar">
+                  <div id="sidebar-content-container">
                     <h3>Subjects</h3>
                     <ul class="mu-sidebar-catg">
-                      <li><a href="chemistry.php">B.Sc. Chemistry</a></li>
-                      <li><a href="mathematics.php">B.Sc. Mathematics</a></li>
-                      <li><a href="bio-science.php">B.Sc. Bio-Science</a></li>
-                      <li><a href="#">B.Sc. Sports</a></li>
+                      <li><a href="chemistry.php" id="chemistry-tab">B.Sc. Chemistry</a></li>
+                      <li><a href="mathematics.php" id="mathematics-tab">B.Sc. Mathematics</a></li>
+                      <li><a href="bio-science.php" id="bio-science-tab">B.Sc. Bio-Science</a></li>
+                      <li><a href="#" id="sports-tab">B.Sc. Sports</a></li>
                     </ul>
                   </div>
                   <!-- end single sidebar -->
-                  
+                  </div>
                   <!-- end single sidebar -->
                 </aside>
                 <!-- / end sidebar -->
@@ -151,7 +152,45 @@
  </section>
         </div>
         </div>
-    </section>
+        
+<!-- Add a container for sidebar content -->
+<!-- JavaScript to load content dynamically -->
+<script>
+    // Get references to the sidebar links and the container for sidebar content
+    const chemistryTab = document.getElementById('chemistry-tab');
+    const mathematicsTab = document.getElementById('mathematics-tab');
+    const bioScienceTab = document.getElementById('bio-science-tab');
+    const sportsTab = document.getElementById('sports-tab');
+    const sidebarContentContainer = document.getElementById('sidebar-content-container');
+
+    // Function to load content from external file using AJAX
+    function loadContent(url) {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    document.getElementById('sidebar-content-container').innerHTML = xhr.responseText;
+                } else {
+                    console.error('Failed to load content: ' + xhr.status);
+                }
+            }
+        };
+        xhr.open('GET', url, true);
+        xhr.send();
+    }
+
+    // Add click event listeners to each tab to load content dynamically
+    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
+    sidebarTabs.forEach(function(tab) {
+        tab.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const url = tab.getAttribute('data-url');
+            loadContent(url); // Load content from the specified URL
+        });
+    });
+
+</script>
+</section>
     <?php
     require_once "./includes/footer.php";
     ?>
