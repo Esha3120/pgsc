@@ -224,6 +224,31 @@
                   <p>Course info</p>
                 </a>
               </li>
+              
+              <li class="nav-item">
+                <a href="chem.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chemistry info</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="maths.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mathematics info</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bio.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bio-Science info</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sports.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sports info</p>
+                </a>
+              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
@@ -291,12 +316,6 @@
                 <a href="about_trust.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>About Trust</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="academic.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p> Academic</p>
                 </a>
               </li>
             </ul>

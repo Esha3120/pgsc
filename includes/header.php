@@ -143,11 +143,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Corner<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Admission Merit List 2023-24</a></li>
-                <li><a href="#">Admission 2023-24</a></li>
-                <li><a href="#">Exam Schedule</a></li>
-                <li><a href="#">Question Paper</a></li>
-                <li><a href="#">Answer Key</a></li>
+                <li><a href="download.php">Downloads</a></li>
+                <li><a href="exam_schedule.php">Exam Schedule</a></li>
               </ul>
             </li>
             <li class="dropdown">

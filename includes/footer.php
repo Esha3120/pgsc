@@ -15,44 +15,58 @@
       <div class="container">
         <div class="mu-footer-top-area">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="col-lg-2 col-md-2 col-sm-2">
               <div class="mu-footer-widget">
-                <h4>Information</h4>
+                <h4>Home</h4>
+              </div>
+          </div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+              <div class="mu-footer-widget">
+                <h4>About Us</h4>
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="">Features</a></li>
-                  <li><a href="">Course</a></li>
-                  <li><a href="">Event</a></li>
-                  <li><a href="">Sitemap</a></li>
-                  <li><a href="">Term Of Use</a></li>
+                  <li><a href="about-trust.php">About Trust</a></li>
+                  <li><a href="principal-message.php">Principal's Message</a></li>
+                  
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-2 col-md-2 col-sm-2">
               <div class="mu-footer-widget">
-                <h4>Student Help</h4>
+                <h4>Academic</h4>
                 <ul>
-                  <li><a href="">Get Started</a></li>
-                  <li><a href="#">My Questions</a></li>
-                  <li><a href="">Download Files</a></li>
-                  <li><a href="">Latest Course</a></li>
-                  <li><a href="">Academic News</a></li>
+                  <li><a href="chemistry.php">B.Sc Chemistry</a></li>
+                  <li><a href="mathematics.php">B.Sc Mathematics</a></li>
+                  <li><a href="bio-science.php">B.Sc BioScience</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-2 col-md-2 col-sm-2">
               <div class="mu-footer-widget">
-                <h4>News letter</h4>
-                <p>Get latest update, news & academic offers</p>
-                <form class="mu-subscribe-form">
-                  <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                </form>
+                <h4>Community</h4>
+                <ul>
+                  <li><a href="faculty.php">Faculty</a></li>
+                  <li><a href="#">Activity</a></li>
+                  <li><a href="">Events</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Student's Achievement</a></li>
+                  <li><a href="">Sports</a></li>
+                  <li><a href="">Extra Curricular</a></li>
+                </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-2 col-md-2 col-sm-2">
               <div class="mu-footer-widget">
-                <h4>Contact</h4>
+                <h4>Student Corner</h4>
+                <ul>
+                  <li><a href="download.php">Downloads</a></li>
+              
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-2 col-sm-2">
+              <div class="mu-footer-widget">
+                <h4>Contact Us </h4>
                 <address>
                   <p>THE PATIDAR GIN SCIENCE COLLEGE,
                     SARDAR BAUG, BARDOLI

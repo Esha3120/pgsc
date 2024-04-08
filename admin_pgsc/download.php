@@ -14,7 +14,7 @@
                     dw_file='$file'
                   ";
                         move_uploaded_file($_FILES['txt_file']['tmp_name'],
-                        "../images/pdf/".$file);
+                        "../files".$file);
                      $res=mysqli_query($con,$q);
                  header("location:download.php");
             }
@@ -58,7 +58,7 @@
             where dw_id='$uid'
             ";
         move_uploaded_file($_FILES['txt_file']['tmp_name'],
-                        "../images/pdf/".$file);
+                        "../files/".$file);
       }
         mysqli_query($con,$q);
        header("location:download.php");
@@ -174,7 +174,7 @@
                             <td><?php echo $i++?></td>
                             <td><?php echo $row['dw_title']?></td>
                             <td><?php echo $row['dw_des']?></td>
-                            <td><embed  src="../images/pdf/<?php echo $row['dw_file']?>" height="50px" width="50px"></td>
+                            <td><embed  src="../files/<?php echo $row['dw_file']?>" height="50px" width="50px"></td>
                             <td>
                               
                                         <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modal-default<?php echo $row['dw_id']?>"><i class="fa fa-pencil

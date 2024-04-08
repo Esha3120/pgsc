@@ -40,7 +40,7 @@
                                     <div class="col-md-9">
                                         <!-- start course content container -->
                                         <?php
-                    $q = "select * from content_mst where co_type='math'";
+                    $q = "select * from content_mst where co_type='sports'";
                     $res = mysqli_query($con, $q);
                     $row = mysqli_fetch_assoc($res);
                     echo $row['co_content']

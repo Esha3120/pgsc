@@ -20,7 +20,7 @@
                     c_img='$img'
                   ";
                         move_uploaded_file($_FILES['txt_img']['tmp_name'],
-                        "../images/course/".$img);
+                        "../assets/img/academic/".$img);
                      $res=mysqli_query($con,$q);
                  header("location:course.php");
             }
@@ -72,7 +72,7 @@
             where c_id='$uid'
             ";
             move_uploaded_file($_FILES['txt_img']['tmp_name'],
-        "../images/course/".$img);
+        "../assets/img/academic/".$img);
       }
         mysqli_query($con,$q);
       header("location:course.php");
@@ -201,7 +201,7 @@
                             <td><?php echo $row['c_fees']?></td>
                             <td><?php echo $row['c_month']?></td>
                             <td><?php echo $row['c_des']?></td>
-                            <td><img src="../images/course/<?php echo $row['c_img']?>" height="50px" width="50px"></td>
+                            <td><img src="../assets/img/academic/<?php echo $row['c_img']?>" height="50px" width="50px"></td>
                             <td>
                                         <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modal-default<?php echo $row['c_id']?>"><i class="fa fa-pencil
 "> Edit</i>
