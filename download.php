@@ -34,7 +34,7 @@
                 <td><?php echo $i++ ?></td>
                 <td><?php echo $row['dw_title'] ?></td>
                 <td><?php echo $row['dw_des'] ?></td>
-                <td><a href="files/<?php echo $row['dw_file'] ?>" height="50px" width="50px">View</a></td>
+                <td><a href="downloads/<?php echo $row['dw_file'] ?>" height="50px" width="50px">View</a></td>
 
               </tr>
             <?php
