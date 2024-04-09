@@ -34,7 +34,7 @@
                 <td><?php echo $i++ ?></td>
                 <td><?php echo $row['name'] ?></td>
                 <td><?php echo $row['designation'] ?></td>
-                <td><img src="admin_pgsc/img/<?php echo $row['img'] ?>" height="50px" width="50px"></td>
+                <td><img src="admin_pgsc/img/<?php echo $row['img'] ?>" height="80px" width="80px" style="border-radius: 50%;" ></td>
               </tr>
             <?php
             }

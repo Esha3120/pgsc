@@ -14,10 +14,10 @@
       <div class="row">
         <div class="col-md-12">
           <div class="mu-page-breadcrumb-area">
-            <h2>Gallery</h2>
+            <h2>Events</h2>
             <ol class="breadcrumb">
               <li><a href="#">Home</a></li>
-              <li class="active">Gallery</li>
+              <li class="active">Events</li>
             </ol>
           </div>
         </div>
@@ -33,20 +33,25 @@
           <div class="mu-gallery-area">
             <!-- start title -->
             <div class="mu-title">
-              <h2>Some Moments</h2>
+              <h2>Events</h2>
             </div>
             <!-- end title -->
             <!-- start gallery content -->
             <div class="mu-gallery-content">
               <!-- Start gallery menu -->
               <div class="mu-gallery-top">
-                <ul>
-                  <li class="filter active" data-filter="all">All</li>
-                  <li class="filter" data-filter=".2021">2021</li>
-                  <li class="filter" data-filter=".2022">2022</li>
-                  <li class="filter" data-filter=".2023">2023</li>
-                  <li class="filter" data-filter=".2024">2024</li>
-                </ul>
+              <ul>
+    <li class="filter active" data-filter="all">All</li>
+    <?php
+    // Loop through distinct years and generate filter options
+    $year_query = "SELECT DISTINCT e_year FROM `events`";
+    $year_result = mysqli_query($con, $year_query);
+    while ($year_row = mysqli_fetch_assoc($year_result)) {
+        echo '<li class="filter" data-filter=".' . $year_row["e_year"] . '">' . $year_row["e_year"] . '</li>';
+    }
+    ?>
+</ul>
+
               </div>
 
               <!-- End gallery menu -->
@@ -55,7 +60,7 @@
                 <ul id="mixit-container" class="row">
                   <!--start single gallery image -->
                   <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_status = 1";
+                  $q = "SELECT * FROM `events` WHERE e_status = 1";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
@@ -64,13 +69,13 @@
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
-                            <img src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>">
+                            <img src="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>">
                           </div>
                           <div class="mu-single-gallery-info">
                             <div class="mu-single-gallery-info-inner">
-                              <h4>Annual Function</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/small/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                              <h4><?php echo $row["e_heading"]; ?></h4>
+                              <p><?php echo $row["e_des"]; ?></p>
+                              <a href="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                               <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                             </div>
                           </div>
@@ -81,23 +86,23 @@
                   }
                   ?>
                   <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2021";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2015";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2021">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2015">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
+                            <a href="#"><img alt="img" src="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>"></a>
                           </div>
                           <div class="mu-single-gallery-info">
                             <div class="mu-single-gallery-info-inner">
-                              <h4>Events</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                              <h4><?php echo $row["e_heading"]; ?></h4>
+                              <p><?php echo $row["e_des"]; ?></p>
+                              <a href="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                               <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                             </div>
                           </div>
@@ -110,23 +115,23 @@
 
 
                   <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2022";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2014";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2022">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2014">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
+                            <a href="#"><img alt="img" src="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>"></a>
                           </div>
                           <div class="mu-single-gallery-info">
                             <div class="mu-single-gallery-info-inner">
-                              <h4>Annual Dance</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                              <h4><?php echo $row["e_heading"]; ?></h4>
+                              <p><?php echo $row["e_des"]; ?></p>
+                              <a href="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                               <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                             </div>
                           </div>
@@ -138,23 +143,23 @@
                   ?>
 
                   <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2023";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2013";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2023">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2013">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
+                            <a href="#"><img alt="img" src="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>"></a>
                           </div>
                           <div class="mu-single-gallery-info">
                             <div class="mu-single-gallery-info-inner">
-                              <h4>Sports</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
+                              <h4><?php echo $row["e_heading"]; ?></h4>
+                              <p><?php echo $row["e_des"]; ?></p>
+                              <a href="./admin_pgsc/images/events/<?php echo $row["e_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                               <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                             </div>
                           </div>
@@ -165,33 +170,6 @@
                   }
                   ?>
 
-                  <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2024";
-                  $res = mysqli_query($con, $q);
-                  $i = 1;
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
-
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2024">
-                      <div class="mu-single-gallery">
-                        <div class="mu-single-gallery-item">
-                          <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
-                          </div>
-                          <div class="mu-single-gallery-info">
-                            <div class="mu-single-gallery-info-inner">
-                              <h4>Competition</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                              <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  <?php
-                  }
-                  ?>
                 </ul>
               </div>
             </div>

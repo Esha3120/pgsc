@@ -133,8 +133,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="faculty.php">Faculty</a></li>
-                <li><a href="#">Activity</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="actvity.php">Activity</a></li>
+                <li><a href="events.php">Events</a></li>
                 <li><a href="#">Student's Acheivement</a></li>
                 <li><a href="#">Sports</a></li>
                 <li><a href="#">Extracuricullar Activities</a></li>

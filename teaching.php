@@ -18,11 +18,12 @@
           <thead>
             <tr>
               <th>Sr.No</th>
+              <th>Image</th>
               <th>Name</th>
               <th>Subject</th>
               <th>Designation</th>
               <th>Email</th>
-              <th>Image</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -34,11 +35,11 @@
             ?>
               <tr>
                 <td><?php echo $i++ ?></td>
+                <td><img src="admin_pgsc/img/<?php echo $row['img'] ?>" height="80px" width="80px" style="border-radius: 50%;"></td>
                 <td><?php echo $row['name'] ?></td>
                 <td><?php echo $row['subject'] ?></td>
                 <td><?php echo $row['designation'] ?></td>
                 <td><?php echo $row['email'] ?></td>
-                <td><img src="admin_pgsc/img/<?php echo $row['img'] ?>" height="50px" width="50px"></td>
               </tr>
             <?php
             }
