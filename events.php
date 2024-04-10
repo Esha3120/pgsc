@@ -47,7 +47,7 @@
     $year_query = "SELECT DISTINCT e_year FROM `events`";
     $year_result = mysqli_query($con, $year_query);
     while ($year_row = mysqli_fetch_assoc($year_result)) {
-        echo '<li class="filter" data-filter=".' . $year_row["e_year"] . '">' . $year_row["e_year"] . '</li>';
+        echo '<li class="filter" data-filter="2024-2023' . $year_row["e_year"] . '">' . $year_row["e_year"] . '</li>';
     }
     ?>
 </ul>
@@ -86,13 +86,13 @@
                   }
                   ?>
                   <?php
-                  $q = "SELECT * FROM `events` WHERE e_year = 2015";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2024-2023";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2015">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2024-2023">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
@@ -115,13 +115,13 @@
 
 
                   <?php
-                  $q = "SELECT * FROM `events` WHERE e_year = 2014";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2023-2022";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2014">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2023-2022">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
@@ -143,13 +143,13 @@
                   ?>
 
                   <?php
-                  $q = "SELECT * FROM `events` WHERE e_year = 2013";
+                  $q = "SELECT * FROM `events` WHERE e_year = 2022-2021";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
 
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2013">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2022-2021">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">

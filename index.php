@@ -47,26 +47,46 @@
         <div class="col-lg-12 col-md-12">
           <div class="mu-service-area">
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" >
               <span class="fa fa-book"></span>
-              <h3>Learn Online</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-            </div>
+              <h3>Website Links</h3>
+              <ul type="circle">
+                <li>Veer Narmad South Gujarat University, Surat
+<a href="http://www.vnsgu.ac.in">www.vnsgu.ac.in</a></li>
+<li>University Grants Commission (UGC)
+<a href="http://www.ugc.ac.in">www.ugc.ac.in</a></li>
+<li>National Assessment and Accreditation Council (NAAC)
+<a href="http://www.naac.gov.in">www.naac.gov.in</a></li>
+              </ul>
+              </div>
             <!-- Start single service -->
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" >
               <span class="fa fa-users"></span>
               <h3>Expert Teachers</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
             </div>
             <!-- Start single service -->
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" >
               <span class="fa fa-table"></span>
               <h3>Latest News</h3>
-              <marquee direction="up">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
-              </marquee>           
+              <marquee direction="up" onMouseOver="this.stop()" onMouseOut="this.start()" height="100" width="200">
+                <ul>
+                  <?php
+                  $q = "SELECT * FROM `news` WHERE n_status = 1";
+                  $res = mysqli_query($con, $q);
+                  $i = 1;
+                  while ($row = mysqli_fetch_assoc($res)) {
+                  ?>
+                    <li><?php echo $row['n_title'] ?></li>
+                    <li><?php echo $row['n_des'] ?></li>
+                  <?php
+                  }
+                  ?>
+
+                </ul>
+              </marquee>
             </div>
             <!-- Start single service -->
           </div>
