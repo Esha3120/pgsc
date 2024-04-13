@@ -55,7 +55,7 @@
                                 <div class="col-md-6">
                                   <div class="mu-latest-course-single">
                                     <figure class="mu-latest-course-img">
-                                      <a href="#"><img alt="img" src="assets/img/academic/<?php echo $row["c_img"]; ?>"></a>
+                                      <a href="#"><img alt="img" height="400" src="assets/img/academic/<?php echo $row["c_img"]; ?>"></a>
                                       <figcaption class="mu-latest-course-imgcaption">
                                         <a href="#"><?php echo $row["c_name"]; ?></a>
                                         <span><i class="fa fa-clock-o"></i><?php echo $row["c_month"]; ?> Months</span>

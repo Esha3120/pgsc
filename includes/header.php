@@ -136,8 +136,8 @@
                 <li><a href="nss2014-15.php">Activity</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Student's Acheivement</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Extracuricullar Activities</a></li>
+                <li><a href="sport.php">Sports</a></li>
+                <li><a href="annual_prize_distribution.php">Extracuricullar Activities</a></li>
               </ul>
             </li>
             <li class="dropdown">
