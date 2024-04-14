@@ -58,13 +58,23 @@
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
                     <i class="fa fa-envelope"></i>
-                    <span>sciencecollegebardoli@gmail.com</span>
+                    
+                  <?php
+                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $res = mysqli_query($con, $q);
+                  $i = 1;
+                  while ($row = mysqli_fetch_assoc($res)) {
+                  ?>
+                    <span><?php echo $row['email'] ?></span>
+                    
+                  
+                     <!--<span>sciencecollegebardoli@gmail.com   02622-220003</span>-->
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
-                    <span> 02622-220003</span>
+                    <span><?php echo $row['contact'] ?></span>
                   </div>
-
+                  
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -106,8 +116,10 @@
           <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Varsity</span></a>-->
           <!-- IMG BASED LOGO  -->
           <a class="navbar-brand" href="index.php">
-            <img src="assets/img/logo.png" alt="logo" width="500px"></a>
-
+            <img src="assets/img/<?php echo $row['logo'] ?>" alt="logo" width="500px"></a>
+            <?php
+                  }
+                  ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">

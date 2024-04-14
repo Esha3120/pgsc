@@ -362,7 +362,7 @@
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
                       <a href="infrastructure.php">
-                        <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
+                        <img src="assets/img/infrastructure/1.jpg" height="200" alt="teacher img">
                       </a>
                     </figure>
                     <div class="mu-ourteacher-single-content">
@@ -374,7 +374,7 @@
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
                       <a href="laboratories.php">
-                        <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
+                        <img src="assets/img/Laboratories/Biology Laboratory-01.jpg" height="200" alt="teacher img">
                       </a>
                     </figure>
                     <div class="mu-ourteacher-single-content">
@@ -386,7 +386,7 @@
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
                       <a href="library.php">
-                        <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
+                        <img src="assets/img/library/LIBRARY2.jpg" height="200" alt="teacher img">
                       </a>
                     </figure>
                     <div class="mu-ourteacher-single-content">
@@ -398,7 +398,7 @@
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
                       <a href="sports_facility.php">
-                        <img src="assets/img/teachers/teacher-01.png" alt="teacher img">
+                        <img src="assets/img/sports_facility/CHESS.jpg" height="200" alt="teacher img">
                       </a>
                     </figure>
                     <div class="mu-ourteacher-single-content">

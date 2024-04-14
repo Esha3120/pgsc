@@ -52,9 +52,18 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="website_setting.php" class="nav-link">
+                <a href="website_setting_add.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Details</p>
+                </a>
+              </li>
+            </ul>
+            
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="website_setting_info.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>View Details</p>
                 </a>
               </li>
             </ul>

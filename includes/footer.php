@@ -68,17 +68,19 @@
               <div class="mu-footer-widget">
                 <h4>Contact Us </h4>
                 <address>
-                  <p>THE PATIDAR GIN SCIENCE COLLEGE,
-                    SARDAR BAUG, BARDOLI
-
-                    DIST. SURAT, (GUJARAT)
-
-                    PIN-394601
-
-                  </p>
-                  <p>PHONE: 02622-220003 </p>
+                <?php
+                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $res = mysqli_query($con, $q);
+                  $i = 1;
+                  while ($row = mysqli_fetch_assoc($res)) {
+                  ?>
+                  <p><?php echo $row['address'] ?></p>
+                  <p>PHONE: <?php echo $row['contact'] ?></p>
                   
-                  <p>E-mail: sciencecollegebardoli@gmail.com</p>
+                  <p>Email:<?php echo $row['email'] ?></p>
+                  <?php
+                  }
+                  ?>
                 </address>
               </div>
             </div>

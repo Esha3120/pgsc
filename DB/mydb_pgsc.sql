@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2024 at 09:11 AM
+-- Generation Time: Apr 14, 2024 at 06:15 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -6255,10 +6255,11 @@ INSERT INTO `slider_mst` (`sd_id`, `sd_heading`, `sd_img`, `sd_status`, `sd_acti
 (35, 'usa study', '_Krisha Patel (1).jpg', '0', '1'),
 (37, 'Maingate', '1.jpg', '1', '1'),
 (38, 'college garden', '2.jpg', '1', '1'),
-(39, 'college', '3.jpg', '1', '1'),
+(39, 'college', '3.jpg', '0', '1'),
 (40, 'xyz', '1.jpg', '0', '1'),
 (41, 'college campus', 'bg_2.jpg', '0', '1'),
-(42, 'test', '9fim2na9j5sr24we68tg.jpg', '0', '1');
+(42, 'test', '9fim2na9j5sr24we68tg.jpg', '0', '1'),
+(43, 'college', '3.jpg', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -6283,7 +6284,7 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id`, `name`, `designation`, `subject`, `email`, `img`, `s_type`, `s_status`, `s_active`) VALUES
-(1, '', '', '', '', '', '', '1', '1'),
+(1, '', '', '', '', '', '', '0', '1'),
 (2, 'Mr. A.G.Parmar', 'Assistant Professor', 'Bio-Science', 'arjunsinh06@yahoo.com', '2.jpg', 'Teaching', '1', '1'),
 (3, 'Mr.H.J.Parekh', 'Senior clerk', '-', 'NA@NA', 'N1.jpg', 'Non-Teaching', '1', '1'),
 (4, 'Ms.A.M.Patel', 'Lab Technician', '-', 'NA@NA', 'N2.jpg', 'Non-Teaching', '1', '1'),
@@ -6541,10 +6542,10 @@ CREATE TABLE `teacher_mst` (
 --
 
 INSERT INTO `teacher_mst` (`t_id`, `t_fname`, `t_mname`, `t_lname`, `t_designation`, `t_info`, `t_mobile_no`, `t_email`, `t_facebook_url`, `t_twitter_url`, `t_linkedin_url`, `t_instgram_url`, `t_status`, `t_active`, `t_img`) VALUES
-(4, 'Dr Mulchand', 'S', 'Sen', 'Founder & CEO', 'Certified IELTS Trainer\r\nCertified Career Counselor\r\nCertified Zone Trainer', '9979156055', 'mulchand.sen16@gmail.com', 'https://www.facebook.com/dhyey.careeracademy', 'https://twitter.com/MulchandSen1', 'https://in.linkedin.com/in/dr-mulchand-sen-203649172', 'https://www.instagram.com/dr.mulchand/?hl=en', '1', '1', 'WhatsApp Image 2021-08-01 at 10.42.50 AM (1).jpeg'),
+(4, 'Dr Mulchand', 'S', 'Sen', 'Founder & CEO', 'Certified IELTS Trainer\r\nCertified Career Counselor\r\nCertified Zone Trainer', '9979156055', 'mulchand.sen16@gmail.com', 'https://www.facebook.com/dhyey.careeracademy', 'https://twitter.com/MulchandSen1', 'https://in.linkedin.com/in/dr-mulchand-sen-203649172', 'https://www.instagram.com/dr.mulchand/?hl=en', '0', '1', 'WhatsApp Image 2021-08-01 at 10.42.50 AM (1).jpeg'),
 (5, 'Dhvanil', 'k', 'Patel', 'Prof', 'PHP Developer ASP Developer', '9737262965', 'dhvanilpatel2542@gmail.com', 'https://www.facebook.com/', 'https://www.twitter.com/', 'https://www.linkedin.com/', 'https://www.instagram.com/', '0', '1', 'Dwanil.JPG'),
 (6, 'Rushil', 'k', 'Patel', 'Eng', 'Auto Mobile ', '9090903220', 'rushil@gmail.com', 'https://www.facebook.com/', 'https://www.facebook.com/', 'https://www.facebook.com/', 'https://www.facebook.com/', '0', '1', 'bg_2.jpg'),
-(7, 'Dr. Ronak', 'K', 'Panchal', 'Faculty & Advisor', 'Advisor & IT Professional', '9898257016', 'dr.ronak.k.panchal@gmail.com', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', '1', '1', 'my (3).png'),
+(7, 'Dr. Ronak', 'K', 'Panchal', 'Faculty & Advisor', 'Advisor & IT Professional', '9898257016', 'dr.ronak.k.panchal@gmail.com', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', 'https://www.linkedin.com/in/ronak-panchal-phd/', '0', '1', 'my (3).png'),
 (8, 'Miral', '.', 'Patel', 'English Faculty', 'Faculty', '9898989898', 'NILESH1728SONAL@GMAIL.COM', 'https://www.facebook.com/dhyey.careeracademy', 'https://twitter.com/MulchandSen1', 'https://in.linkedin.com/in/dr-mulchand-sen-203649172', 'https://www.instagram.com/dr.mulchand/?hl=en', '0', '1', 'tuxpi.com.1593883062.jpg'),
 (9, 'Dilshad', '.', 'Patel', 'IELTS Teacher', 'IELTS Teacher', '9773049023', 'D.patel_04@hotmail.com', 'https://www.tuxpi.com/photo-effects/shape-tool', 'https://www.tuxpi.com/photo-effects/shape-tool', 'https://www.tuxpi.com/photo-effects/shape-tool', 'https://www.tuxpi.com/photo-effects/shape-tool', '0', '1', 'tuxpi.com.1608271356.jpg'),
 (10, 'Dr. Ronak', 'K', 'Panchal', 'Associate Professor', 'Expert in Data Science', '9898257016', 'ronakvtcbb@gmail.com', 'https://linkedin.com/in/ronak-panchal-phd', 'https://linkedin.com/in/ronak-panchal-phd', 'https://linkedin.com/in/ronak-panchal-phd', 'https://linkedin.com/in/ronak-panchal-phd', '0', '1', 'mypngphoto.png'),
@@ -6617,19 +6618,20 @@ INSERT INTO `testimonial_mst` (`tm_id`, `tm_name`, `tm_designation`, `tm_des`, `
 CREATE TABLE `website_setting` (
   `id` int(25) NOT NULL,
   `logo` varchar(250) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `contact` int(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `contact` varchar(50) NOT NULL,
   `video` text NOT NULL,
   `address` varchar(250) NOT NULL,
-  `status` varchar(25) NOT NULL
+  `status` varchar(25) NOT NULL DEFAULT '1',
+  `active` varchar(50) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `website_setting`
 --
 
-INSERT INTO `website_setting` (`id`, `logo`, `email`, `contact`, `video`, `address`, `status`) VALUES
-(7, 'logo.png', 'fenilpanchal8872@gmail.com', 973749862, 'https://youtu.be/HN3pm9qYAUs', 'bardoli  ', 'Active');
+INSERT INTO `website_setting` (`id`, `logo`, `email`, `contact`, `video`, `address`, `status`, `active`) VALUES
+(11, 'logo.png', 'sciencecollegebardoli@gmail.com', '02622-220003', 'youtube', 'THE PATIDAR GIN SCIENCE COLLEGE, SARDAR BAUG, BARDOLI DIST. SURAT, (GUJARAT) PIN-394601', '0', '1');
 
 --
 -- Indexes for dumped tables
@@ -6949,7 +6951,7 @@ ALTER TABLE `skill_mst`
 -- AUTO_INCREMENT for table `slider_mst`
 --
 ALTER TABLE `slider_mst`
-  MODIFY `sd_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `sd_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `staff`
@@ -6997,7 +6999,7 @@ ALTER TABLE `testimonial_mst`
 -- AUTO_INCREMENT for table `website_setting`
 --
 ALTER TABLE `website_setting`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
