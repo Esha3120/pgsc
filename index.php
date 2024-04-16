@@ -71,7 +71,12 @@
                 <li>Veer Narmad South Gujarat University, Surat
                   <a href="http://www.vnsgu.ac.in">www.vnsgu.ac.in</a>
                 </li>
-                
+                <li>University Grants Commission (UGC)
+                  <a href="http://www.ugc.ac.in">www.ugc.ac.in</a>
+                </li>
+                <li>National Assessment and Accreditation Council (NAAC)
+                  <a href="http://www.naac.gov.in">www.naac.gov.in</a>
+                </li>
               </ul>
             </div>
             <!-- Start single service -->
@@ -79,7 +84,7 @@
             <div class="mu-service-single">
               <span class="fa fa-table"></span>
               <h3>Latest News</h3>
-              <marquee direction="up" onMouseOver="this.stop()" onMouseOut="this.start()" height="100" width="200">
+              <marquee direction="up" onMouseOver="this.stop()" onMouseOut="this.start()" height="131" width="200">
                 <ul>
                   <?php
                   $q = "SELECT * FROM `news` WHERE n_status = 1";
@@ -89,7 +94,7 @@
                   ?>
                     <li><?php echo $row['n_title'] ?></li>
                     <li><?php echo $row['n_des'] ?></li>
-                  <?php
+                    <?php
                   }
                   ?>
 
@@ -139,8 +144,18 @@
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-right">
-                  <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
+                <?php
+                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $res = mysqli_query($con, $q);
+                  $i = 1;
+                  while ($row = mysqli_fetch_assoc($res)) {
+                  ?>
+                  <a id="mu-abtus-video" href="<?php echo $row['video'];?>" target="mutube-video">
                     <img src="assets/img/gallery/big/15.jpeg" alt="img">
+                    <?php
+                  }
+                  ?>
+
                   </a>
                 </div>
               </div>
@@ -310,7 +325,7 @@
                           <div class="col-md-6">
                             <div class="mu-latest-course-single">
                               <figure class="mu-latest-course-img">
-                                <a href="#"><img alt="img" height="400" id="clickableImage" src="assets/img/academic/<?php echo $row["c_img"]; ?>"></a>
+                                <a href="academic.php"><img alt="img" height="400" src="assets/img/academic/<?php echo $row["c_img"]; ?>"></a>
                                 <figcaption class="mu-latest-course-imgcaption">
                                   <a href="#"><?php echo $row["c_name"]; ?></a>
                                   <span><i class="fa fa-clock-o"></i><?php echo $row["c_month"]; ?> Months</span>

@@ -13,14 +13,14 @@
   {
         $name=$_REQUEST['txt_name'];
         $email=$_REQUEST['txt_email'];
-        $mobile=$_REQUEST['txt_phonenumber'];
+        $subject=$_REQUEST['txt_subject'];
         $message=$_REQUEST['txt_message'];
         $active=$_REQUEST['txt_active'];
         $uid=$_REQUEST['eid'];
      $q="update  contact_us_mst set
         cu_name='$name',
         cu_email='$email',
-        cu_mobile_no='$mobile',
+        cu_subject='$subject',
         cu_message='$message',
         cu_active='$active'
         where cu_id='$uid'
@@ -85,7 +85,7 @@
                     <th>SR.NO</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Phone No</th>
+                    <th>Subject</th>
                     <th>Message</th>
                     <th>Action</th>
                   </tr>
@@ -102,7 +102,7 @@
                               <td><?php echo $i++?></td>
                               <td><?php echo $row['cu_name']?></td>
                               <td><?php echo $row['cu_email']?></td>
-                              <td><?php echo $row['cu_mobile_no']?></td>
+                              <td><?php echo $row['cu_subject']?></td>
                               <td><?php echo $row['cu_message']?></td>
                                     <td>
                                         <button  type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#modal-default<?php echo $row['cu_id']?>"><i class="fa fa-pencil
@@ -158,8 +158,8 @@
                                                         <input type="Email" name="txt_email" class="form-control"required="" value="<?php echo $row['cu_email'];?>" required>
                                                         </div>
                                                         <div>
-                                                            <label>Mobile Number</label>
-                                                            <input type="text" name="txt_phonenumber" value="<?php echo $row['cu_mobile_no']?>" class="form-control" required>
+                                                            <label>Subject</label>
+                                                            <input type="text" name="txt_subject" value="<?php echo $row['cu_subject']?>" class="form-control" required>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Message</label>
@@ -209,7 +209,7 @@
                     <th>SR.NO</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Phone No</th>
+                    <th>Subject</th>
                     <th>Message</th>
                     <th>Action</th>
                   </tr>
