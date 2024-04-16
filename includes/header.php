@@ -146,7 +146,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="faculty.php">Faculty</a></li>
                 <li><a href="nss2014-15.php">Activity</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="events.php">Events</a></li>
                 <li><a href="#">Student's Acheivement</a></li>
                 <li><a href="sport.php">Sports</a></li>
                 <li><a href="annual_prize_distribution.php">Extracuricullar Activities</a></li>
@@ -156,7 +156,6 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Corner<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="download.php">Downloads</a></li>
-                <li><a href="exam_schedule.php">Exam Schedule</a></li>
               </ul>
             </li>
             <li class="dropdown">
