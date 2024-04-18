@@ -19,7 +19,7 @@
                     <h2 class="text-center">Activity</h2>
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action list-group-item-light "
-                            href="nss2014-15.php">NSS</a>
+                            href="nss2015-16.php">NSS</a>
                         <a class="list-group-item list-group-item-action list-group-item-light active"
                             href="saptdhara_activity.php">Saptdhara Activities</a>
                         <a class="list-group-item list-group-item-action list-group-item-light "

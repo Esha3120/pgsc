@@ -69,7 +69,7 @@
                 <h4>Contact Us </h4>
                 <address>
                 <?php
-                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $q = "SELECT * FROM `website_setting` WHERE status = 1 limit 1";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {

@@ -72,7 +72,7 @@
                             <tr>
                                 <td>1</td>
                                 <td>AQAR</td>
-                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli, Gujarat.doc-12-13 (1).pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli, Gujarat.doc-12-13 (1).pdf" target="_blank" rel="noopener noreferrer">View</a></strong></td>
                             </tr>
                           
                             <tr>
@@ -82,7 +82,7 @@
                             <tr>
                                 <td>2</td>
                                 <td>AQAR</td>
-                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-13-14.pdf.crdownload" target="_blank" rel="noopener noreferrer">View</a></strong></td>
+                                <td><strong><a style="color: #3366ff;" href="files/The P. G. Science College, Bardoli,Gujarat.doc-13-14.pdf" target="_blank" rel="noopener noreferrer">View</a></strong></td>
                             </tr>
 
 <tr>

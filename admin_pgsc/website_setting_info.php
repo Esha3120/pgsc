@@ -1,14 +1,14 @@
 <?php
-include "scheck.php";
-
-if (isset($_REQUEST['btndelete'])) {
-  $id = $_REQUEST['id'];
-  $q = "update website_setting set
+ include"scheck.php";
+ if(isset($_REQUEST['btndelete']))
+ {
+     $id=$_REQUEST['did'];
+      $q="update website_setting set
        status=0 where id='$id'
      ";
-  mysqli_query($con, $q);
-  header("location:website_setting_info.php");
-}
+   mysqli_query($con,$q);  
+   header("location: website_setting_info.php");
+ }
 if (isset($_REQUEST['btnedit'])) {
   if ($_FILES['txt_logo']['name'] == "") {
     $logo = $_FILES['txt_logo']['name'];
@@ -119,7 +119,7 @@ if (isset($_REQUEST['btnedit'])) {
               </thead>
               <tbody>
                 <?php
-                $q = "select * from website_setting";
+                $q = "select * from website_setting where status=1";
                 $res = mysqli_query($con, $q);
                 $i = 1;
                 while ($row = mysqli_fetch_assoc($res)) {
@@ -155,7 +155,7 @@ if (isset($_REQUEST['btnedit'])) {
                           <div class="modal-body">
                             Are You Sure You Want To Delete
                             <form method="post" class="">
-                              <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                              <input type="hidden" name="did" value="<?php echo $row['id']; ?>">
                           </div>
                           <div class="modal-footer justify-content-between">
                             <button type="button" class="btn btn-default" data-dismiss="modal">No</button>

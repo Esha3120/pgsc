@@ -60,7 +60,7 @@
                     <i class="fa fa-envelope"></i>
                     
                   <?php
-                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $q = "SELECT * FROM `website_setting` WHERE status = 1 LIMIT 1";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
@@ -145,9 +145,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="faculty.php">Faculty</a></li>
-                <li><a href="nss2014-15.php">Activity</a></li>
+                <li><a href="nss2015-16.php">Activity</a></li>
                 <li><a href="events.php">Events</a></li>
-                <li><a href="#">Student's Acheivement</a></li>
+                <li><a href="achievement15-16.php">Student's Acheivement</a></li>
                 <li><a href="sport.php">Sports</a></li>
                 <li><a href="annual_prize_distribution.php">Extracuricullar Activities</a></li>
               </ul>

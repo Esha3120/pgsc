@@ -14,7 +14,7 @@
 
 <h2><center>AQAR Report 2013-2014</center></h2><br></br>
 
-<embed src="files/The P. G. Science College, Bardoli,Gujarat.doc-13-14.pdf.crdownload" type="application/pdf" width="100%" height="600px" >2012-13</embed>
+<embed src="files/The P. G. Science College, Bardoli,Gujarat.doc-13-14.pdf" type="application/pdf" width="100%" height="600px" >2012-13</embed>
 
 
 </section>

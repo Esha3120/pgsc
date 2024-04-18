@@ -18,7 +18,7 @@
                 <div class="col-sm-3 p-5 inner-section">
                     <h2 class="text-center">Activity</h2>
                     <div class="list-group">
-                        <a class="list-group-item list-group-item-action list-group-item-light " href="nss2014-15.php">NSS</a>
+                        <a class="list-group-item list-group-item-action list-group-item-light " href="nss2015-16.php">NSS</a>
                         <a class="list-group-item list-group-item-action list-group-item-light active" href="saptdhara_activity.php">Saptdhara Activities</a>
                         <a class="list-group-item list-group-item-action list-group-item-light " href="sports1.php">Sports</a>
                         <a class="list-group-item list-group-item-action list-group-item-light " href="dell_scope.php">Dell/Scope</a>

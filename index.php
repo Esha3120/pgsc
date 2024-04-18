@@ -145,13 +145,13 @@
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-right">
                 <?php
-                  $q = "SELECT * FROM `website_setting` WHERE status = 0";
+                  $q = "SELECT * FROM `website_setting` WHERE status = 1 LIMIT 1";
                   $res = mysqli_query($con, $q);
                   $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
-                  <a id="mu-abtus-video" href="<?php echo $row['video'];?>" target="mutube-video">
-                    <img src="assets/img/gallery/big/15.jpeg" alt="img">
+                  <?php echo $row['video'];?>
+                    
                     <?php
                   }
                   ?>

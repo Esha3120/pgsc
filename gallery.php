@@ -3,11 +3,12 @@
 
 <head>
   <?php
-
   require_once "conn.php";
   require_once "./includes/header.php";
   ?>
-  <!-- End search box -->
+</head>
+
+<body>
   <!-- Page breadcrumb -->
   <section id="mu-page-breadcrumb">
     <div class="container">
@@ -25,6 +26,7 @@
     </div>
   </section>
   <!-- End breadcrumb -->
+
   <!-- Start gallery  -->
   <section id="mu-gallery">
     <div class="container">
@@ -48,19 +50,15 @@
                   <li class="filter" data-filter=".2024">2024</li>
                 </ul>
               </div>
-
               <!-- End gallery menu -->
-
               <div class="mu-gallery-body">
                 <ul id="mixit-container" class="row">
-                  <!--start single gallery image -->
                   <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_status = 1";
+                  $q = "SELECT * FROM `gallery` WHERE g_status = 1 ORDER BY g_year DESC";
                   $res = mysqli_query($con, $q);
-                  $i = 1;
                   while ($row = mysqli_fetch_assoc($res)) {
                   ?>
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix all">
+                    <li class="col-md-4 col-sm-6 col-xs-12 mix <?php echo $row['g_year']; ?>">
                       <div class="mu-single-gallery">
                         <div class="mu-single-gallery-item">
                           <div class="mu-single-gallery-img">
@@ -68,121 +66,9 @@
                           </div>
                           <div class="mu-single-gallery-info">
                             <div class="mu-single-gallery-info-inner">
-                              <h4>Annual Function</h4>
-                              <p>...</p>
+                              <h4><?php echo $row["g_heading"]; ?></h4>
+                              <p><?php echo $row["g_des"]; ?></p>
                               <a href="assets/img/gallery/small/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                              <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  <?php
-                  }
-                  ?>
-                  <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2021";
-                  $res = mysqli_query($con, $q);
-                  $i = 1;
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
-
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2021">
-                      <div class="mu-single-gallery">
-                        <div class="mu-single-gallery-item">
-                          <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
-                          </div>
-                          <div class="mu-single-gallery-info">
-                            <div class="mu-single-gallery-info-inner">
-                              <h4>Events</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                              <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  <?php
-                  }
-                  ?>
-
-
-                  <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2022";
-                  $res = mysqli_query($con, $q);
-                  $i = 1;
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
-
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2022">
-                      <div class="mu-single-gallery">
-                        <div class="mu-single-gallery-item">
-                          <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
-                          </div>
-                          <div class="mu-single-gallery-info">
-                            <div class="mu-single-gallery-info-inner">
-                              <h4>Annual Dance</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                              <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  <?php
-                  }
-                  ?>
-
-                  <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2023";
-                  $res = mysqli_query($con, $q);
-                  $i = 1;
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
-
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2023">
-                      <div class="mu-single-gallery">
-                        <div class="mu-single-gallery-item">
-                          <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
-                          </div>
-                          <div class="mu-single-gallery-info">
-                            <div class="mu-single-gallery-info-inner">
-                              <h4>Sports</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
-                              <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  <?php
-                  }
-                  ?>
-
-                  <?php
-                  $q = "SELECT * FROM `gallery` WHERE g_year = 2024";
-                  $res = mysqli_query($con, $q);
-                  $i = 1;
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
-
-                    <li class="col-md-4 col-sm-6 col-xs-12 mix 2024">
-                      <div class="mu-single-gallery">
-                        <div class="mu-single-gallery-item">
-                          <div class="mu-single-gallery-img">
-                            <a href="#"><img alt="img" src="assets/img/gallery/small/<?php echo $row["g_img"]; ?>"></a>
-                          </div>
-                          <div class="mu-single-gallery-info">
-                            <div class="mu-single-gallery-info-inner">
-                              <h4>Competition</h4>
-                              <p>...</p>
-                              <a href="assets/img/gallery/big/<?php echo $row["g_img"]; ?>" data-fancybox-group="gallery" class="fancybox"><span class="fa fa-eye"></span></a>
                               <a href="#" class="aa-link"><span class="fa fa-link"></span></a>
                             </div>
                           </div>
@@ -201,12 +87,11 @@
       </div>
     </div>
   </section>
-
   <!-- End gallery  -->
 
   <?php
   require_once "./includes/footer.php";
   ?>
-  </body>
+</body>
 
 </html>
